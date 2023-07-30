@@ -1,0 +1,56 @@
+html {
+    background-color: rgba(120, 98, 243, 0.45);
+    /* aca le di color de fondo a la pagina */
+}
+
+body {
+    width: 900px;
+    margin: 0 auto;
+    padding: 0 20px 20px 20px;
+    background-color: #2a96c4;  
+    border: 5px solid black;
+    /* aca le di color de fondo al cuepo, regule los margenes, un borde negro*/
+}
+
+.tamaño{
+    max-width: 50%;
+    max-height: 50%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    /* cree un estilo para regular el tamaño de la imagen
+     y darles margenes superior e inferior
+     para que no se pisen con los "carteles" */
+}
+
+.alinear {
+    text-align: center;
+    /* cree este estilo para centrar las imagenes */
+
+}
+
+h1 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* le di una fuente para el titulo de la pagina */
+}
+
+h2{
+    font-family:'Courier New', Courier, monospace;
+    /* le di una fuente distinta para los titulos secundarios */
+}
+
+li{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.cartel {
+    border: 5px solid rgba(56, 0, 22, 0.671);
+    background-color: #6ca9c48b; 
+    width:200px;
+    margin-left: auto;
+    margin-right: auto;
+}
