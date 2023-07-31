@@ -38,7 +38,7 @@ h2{
     /* le di una fuente distinta para los titulos secundarios */
 }
 
-li{
+ul{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: center;
     margin-left: auto;
@@ -49,8 +49,8 @@ li{
 
 .cartel {
     border: 5px solid rgba(56, 0, 22, 0.671);
-    background-color: #6ca9c48b; 
-    width:200px;
+    background-color: #6ca9c48b;
+    width: 200px;
     margin-left: auto;
     margin-right: auto;
 }
