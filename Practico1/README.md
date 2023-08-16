@@ -72,5 +72,5 @@ Editado con Visual Studio Code
 
 ## Autores ✒️
 
-Autor : Agustin Leonardo Perez
-Colaboradores : Este fue un trabajo de varios dias de investigacion y pruevas, donde todas las dudas o problemas que fueron surgiendo se trabajaron tanto en clase con el profesor, como en las practicas con el ayudante de practicas y mis compañeros de cursada.
+- Autor : Agustin Leonardo Perez
+- Colaboradores : Este fue un trabajo de varios dias de investigacion y pruebas, donde todas las dudas o problemas que fueron surgiendo se trabajaron tanto en clase con el profesor, como en las prácticas con el ayudante de prácticas y mis compañeros de cursada.
