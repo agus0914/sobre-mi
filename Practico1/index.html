@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+ <!-- en esta seccion se le indica el tipo de caracteres
+el enlace externo hacia el archivo CSS y el titulo de la pestaña-->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link type="text/css" href="style.css" rel="stylesheet">
+  <title>Calculadora</title>
+  <h1></h1>
+</head>
+
+<body>
+<!-- en esta seccion se crea un div que contiene todo lo referente a la calculadora-->
+  <div id="calculadora" class="calculadora">
+    <h1> CALCULADORA </h1>
+    <p>Selecciona el operador</p>
+
+<!-- en esta seccion se crea el select para poder elegir la operacion-->
+    <select name="operando" id="operando">
+      <option class="operador" value="+"> Sumar </option>
+      <option class="operador" value="-"> Restar </option>
+      <option class="operador" value="*"> Multiplicación</option>
+      <option class="operador" value="/"> Division</option>
+      <option class="operador" value="%"> Promedio</option>
+    </select>
+
+    <!-- se crean las entradas de los dos valores con un placeholder que
+    indica que ingrese ahi los numeros-->
+       <div>
+        <input class="entradas" type="number" id="primerValor" placeholder="Escribe un numero">
+        <input class="entradas" type="number" id="segundoValor" placeholder="Escribe un numero">
+      </div> 
+      
+      <!-- se crean los botones de limpiar y calcular con sus respectivas llamadas -->
+      <div>
+        <button class="botonCalcular" id="calcular" onclick="main()">Realizar Operacion</button>
+        <button class="botonLimpiar"   id="limpiar" onclick="limpiar()">Limpiar</button>
+      </div>
+    
+      <!-- se crea un div para mostrar un mensaje esperando el resultado a continuacion-->
+    <div class="resultado" >
+      <p id="mensaje">El resultado de la operacion es:
+        <output id="resultado"></output>
+      </p>
+    </div>
+
+  </div>
+
+  <!-- se crea el enlace con el archivo JavaScript -->
+  <script type="text/javascript" src="calculadora.js"></script>
+
+</body>
+
+</html>
