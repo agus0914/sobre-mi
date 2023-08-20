@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" href="style.css" rel="stylesheet">
+    <title>Calculadora</title>
+</head>
+
+<body>
+    <div>
+        <h1>Piedra, Papel o Tijera</h1>
+        <p>
+            En esta opotunidad competiras contra una computadora y el ganador se define al mejor de 5 rondas.
+        </p><br>
+        <p>Buena Suerte</p>
+
+    </div>
+
+    <div>
+        <p>Seleccione una jugada</p>
+        <button onclick="obtenerJugadaUsuario('Piedra')"><img src="Piedra.jpg" alt="Piedra"></button>
+        <button onclick="obtenerJugadaUsuario('Papel')"><img src="Papel.jpg" alt="Papel"></button>
+        <button onclick="obtenerJugadaUsuario('Tijera')"><img src="Tijera.jpg" alt="Tijera"></button>
+    </div>
+
+   <div>
+    <p>Su jugada es: 
+        <output id="jugadaUsuario"></output> 
+    </p>
+    <p id="jugadaPC" >
+    </p>
+    <button id="Jugar" onclick="main()">Jugar</button>
+   </div> 
+
+   <div>
+    <p id="1"></p>
+   </div>
+   <div>
+    <p id="2"></p></p>
+   </div>
+   <div>
+    <p id="3"></p>
+   </div>
+   <div>
+    <p id="4"></p>
+    </p>
+   </div>
+   <div>
+    <p id="5"></p>
+   </div>
+
+   <div>
+    <p id="ganador"></p>
+   </div>
+    
+</body>
+<script type="text/javaScript" src="calculadora.js"></script>
+</html>
