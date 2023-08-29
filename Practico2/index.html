@@ -1,59 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <!-- Seccion Head estandar con su link al archivo CSS y su titulo de pestaña -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link type="text/css" href="style.css" rel="stylesheet">
-    <title>Calculadora</title>
+    <title>Piedra_Papel_Tijera</title>
 </head>
 
+<!-- Body general -->
 <body>
-    <div>
-        <h1>Piedra, Papel o Tijera</h1>
-        <p>
-            En esta opotunidad competiras contra una computadora y el ganador se define al mejor de 5 rondas.
-        </p><br>
-        <p>Buena Suerte</p>
+    <!-- div padre con grid para las columnas-->
+    <div class="grid">
+
+        <!-- div hijo de la primera columna ordenada con flex-->
+
+        <div class="izq">
+
+            <!-- div Header con mensaje de bienvenida -->
+            <div class="Header">
+                <h1>Piedra, Papel o Tijera</h1>
+                <p>
+                    En esta opotunidad competiras contra una computadora y el ganador se define al mejor de 5 rondas.
+                </p>
+                <p>Buena Suerte</p>
+
+            </div>
+
+            <!-- div formulario con input para el nombre y boton de confirmacion -->
+
+            <div class="Formulario">
+                <p>Por favor ingrese su nombre antes de jugar</p>
+                <input class="entrada" id="entrada" type="text" placeholder="Ingrese su nombre aqui">
+                <button class="nombre" id="nombre" onclick="asignar()">OK</button>
+             </div>
+
+             <!-- div tabla para el marcador -->
+
+            <div class="Tabla">
+                <table>
+                    <tr>
+                        <th id="nombreTablero">Usuario</th>
+                        <th>PC</th>
+                    </tr>
+                    <tr>
+                        <td id="valorUsuario">0</td>
+                        <td id="valorPC">0</td>
+                    </tr>
+                </table>
+            </div>
+
+        </div>
+
+        <!-- div hijo de la segunda columna -->
+
+        <div class="centro" id="centro">
+
+            <!-- div para los botones -->
+
+            <div class="Botones" id="Botones">
+                <p>Seleccione<br>una<br>jugada</p>
+                <button class="boton" id="boton" onclick="obtenerJugadaUsuario('Piedra')"><img class="imagen" src="Piedra.jpg"
+                        alt="Piedra"></button>
+                <button class="boton" id="boton" onclick="obtenerJugadaUsuario('Papel')"><img class="imagen" src="Papel.jpg"
+                        alt="Papel"></button>
+                <button class="boton" id="boton" onclick="obtenerJugadaUsuario('Tijera')"><img class="imagen" src="Tijera.jpg"
+                        alt="Tijera"></button>
+            </div>
+
+            <!-- div para los mensajes con el usuario con botones de jugar y reiniciar -->
+
+            <div class="Interfaz" id="Interfaz">
+                <p id="saludo">
+                </p>
+                <p id="jugadaPC">
+                </p>
+                <p id="resultado">
+                </p>
+                <p id="denuevo">
+                </p>
+                <button class="jugar" id="Jugar" onclick="main()"> <b>Jugar</b></button>
+                <button class="reiniciar" id="reiniciar" onclick="reiniciar()">Vuerlve a Jugar</button>
+            </div>
+
+        </div>
 
     </div>
 
-    <div>
-        <p>Seleccione una jugada</p>
-        <button onclick="obtenerJugadaUsuario('Piedra')"><img src="Piedra.jpg" alt="Piedra"></button>
-        <button onclick="obtenerJugadaUsuario('Papel')"><img src="Papel.jpg" alt="Papel"></button>
-        <button onclick="obtenerJugadaUsuario('Tijera')"><img src="Tijera.jpg" alt="Tijera"></button>
-    </div>
-
-   <div>
-    <p>Su jugada es: 
-        <output id="jugadaUsuario"></output> 
-    </p>
-    <p id="jugadaPC" >
-    </p>
-    <button id="Jugar" onclick="main()">Jugar</button>
-   </div> 
-
-   <div>
-    <p id="1"></p>
-   </div>
-   <div>
-    <p id="2"></p></p>
-   </div>
-   <div>
-    <p id="3"></p>
-   </div>
-   <div>
-    <p id="4"></p>
-    </p>
-   </div>
-   <div>
-    <p id="5"></p>
-   </div>
-
-   <div>
-    <p id="ganador"></p>
-   </div>
-    
 </body>
+
+<!-- script con JS -->
 <script type="text/javaScript" src="JavaScript.js"></script>
+
 </html>

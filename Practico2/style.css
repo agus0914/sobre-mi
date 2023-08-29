@@ -1,0 +1,126 @@
+/* configurando el body padre con su color de fondo y letras*/
+body {
+    margin: auto;
+    text-align: center;
+    position: relative;
+    background-color: #023047;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+}
+/* configurando el grid con 2, una con el triple de tamaño que la otra*/
+.grid {
+    display: grid;
+    margin: auto;
+    padding: 20px;
+    grid-template-columns: 1fr 3fr;
+    gap: 20px;
+}
+
+/* configurando el flex en cada una de las columnas */
+.izq , .centro {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+/* escondiendo el boton para que no se pueda seleccionar en un principio*/
+.Interfaz , .Botones , .jugar {
+    opacity: 0;
+}
+
+/* dandole los mismos bordes a todas las secciones */
+.Tabla, .Botones, .Header, .Formulario, .Interfaz {
+    border: 7px solid #219ebc;
+    border-radius: 30px;
+    background-color: #8ecae6;
+}
+ /* dando un margen al header*/
+.Header{
+    margin: 10px;
+
+    /* configurando el flex de los botones de piedra papel o tijera*/
+}
+.Botones {
+    display: flex;
+    flex-direction:row;
+    justify-content: space-evenly;
+    height: 300px;
+}
+
+/* configurando aspecto y animacion de los botones*/
+
+.jugar , .reiniciar , .nombre {
+    margin: 10px;
+    border-radius: 50%;
+    background-color:aquamarine;
+    width: 100px;
+    height: 50px;
+    font-family: cursive;
+    animation-name: pulse;
+    animation-duration:0s;
+    animation-iteration-count: infinite;
+}
+
+/* dando bordes y forma a las imagenes*/
+.imagen {
+    border-radius: 50%;
+    border: 5px solid black;
+    height: 250px;
+}
+
+/* dando formatos a las imagenes de los botones y transicion*/
+
+.boton {
+    border-radius: 50%;
+    border-color: transparent;
+    background-color: transparent;
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    transition: all 0.3s;
+}
+
+/*configurando los hover de todos los seleccionables*/ 
+
+.boton:hover , .jugar:hover , .reiniciar:hover , .nombre:hover {
+    cursor: pointer;
+    transform: scale(1.25);
+    transition: all 0.3s;
+}
+
+/* configurando las escalas de transformacion de la animacion */
+  @keyframes pulse {
+    0% {transform: scale(1);}
+    50% {transform: scale(1.2);}
+    100% {transform: scale(1);}
+  }
+
+  /* boton invisible en un comienzo y su velocidad de transicion */
+.reiniciar {
+    opacity: 0;
+    transition: all 0.3s;
+    
+}
+
+/* animacion y margen del boton ok */
+
+.nombre {
+ margin-bottom: 10px;
+ opacity: 1;
+ animation-duration: 1s;
+}
+
+/*configuracion del tablero con su borde y forma*/
+
+th,
+td {
+    border-radius: 3px;
+    border: 3px solid black;
+    border-radius: 50px;
+    width: 140px;
+}
+
+table {
+    margin: 10px;
+}
